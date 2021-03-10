@@ -1,0 +1,409 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="f80bcb4a-0b00-4225-a825-2137f779b428" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Violations</ID>
+  <Name>Violations</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="8" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1002" scrolltop="106" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="9462" y="11367" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Violations" left="20" top="5427" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="4530" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b211000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Violations" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1002</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>106</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>5427</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>75</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="d5348a12-596f-4849-900e-0f4622a6b16c">
+    <DataSourceViewID>s20103</DataSourceViewID>
+  </Source>
+  <Type>Time</Type>
+  <ErrorConfiguration dwd:design-time-name="fb028b23-b121-4ed6-9e99-3cde63b22cc2">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="2da578f8-b256-4f04-b68b-44314ec7725e">
+      <ID>Vio Id</ID>
+      <Name>Vio Id</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a4ddf45f-9b7e-4ac5-b0c7-ccab72747a71">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="40be2c25-cb6c-43ee-85be-4d51da448e2a">
+            <TableID>dbo_Violations</TableID>
+            <ColumnID>VioId</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="801c48f7-58aa-432a-abde-f2b12a0e5f65">
+        <DataType>WChar</DataType>
+        <DataSize>150</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="a9f56b33-1eff-468d-9905-df750f4e4fdc">
+          <TableID>dbo_Violations</TableID>
+          <ColumnID>Country</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="4ad9fa72-edf9-4a6a-91fa-aadb9be1cade">
+          <AttributeID>Construction Art</AttributeID>
+          <Name>Construction Art</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9db1aa3e-39ee-4664-a0dc-af54555a2392">
+          <AttributeID>Responsibility</AttributeID>
+          <Name>Responsibility</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c56da9f6-25a1-477d-a72a-8ff93510477b">
+          <AttributeID>Safety</AttributeID>
+          <Name>Safety</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8489f677-4961-4982-8761-a91e17e91b48">
+          <AttributeID>Material Quality</AttributeID>
+          <Name>Material Quality</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d52ed344-f92f-46ec-92c7-c3b96624ef82">
+          <AttributeID>Place</AttributeID>
+          <Name>Place</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c70eb903-f80b-4a1a-b0da-6bab71d9d040">
+          <AttributeID>City</AttributeID>
+          <Name>City</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="04ab62d2-00c1-4230-9930-7acb563cf5b0">
+          <AttributeID>Details</AttributeID>
+          <Name>Details</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="59e34157-1657-46db-997e-3f558acdb74a">
+          <AttributeID>Date</AttributeID>
+          <Name>Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="98139e49-d57c-4ab3-ab01-7edfddd956cc">
+          <AttributeID>Day</AttributeID>
+          <Name>Day</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e48aa715-b702-4663-a2c6-17158472eb7e">
+          <AttributeID>Month</AttributeID>
+          <Name>Month</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8748ee3a-30aa-42c7-8cf6-5214c95f0583">
+          <AttributeID>Type</AttributeID>
+          <Name>Type</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="87d1547a-76ae-40e1-8b75-144325655056">
+      <ID>Construction Art</ID>
+      <Name>Construction Art</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a47bd939-8ee6-436e-8bb7-7a9cb8dc9448">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="45d41b84-3b21-4e3d-bf37-41bf78c7967e">
+            <TableID>dbo_Violations</TableID>
+            <ColumnID>ConstructionArt</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fc8cae80-fff4-4ecb-890f-09a6f8060f5e">
+      <ID>Responsibility</ID>
+      <Name>Responsibility</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cb15a14d-0473-4af0-80d8-23207f885ec6">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="eadf341c-1c7d-455d-af31-b225c605b54b">
+            <TableID>dbo_Violations</TableID>
+            <ColumnID>Responsibility</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="45f61880-c130-40b2-89a8-3769224b4179">
+      <ID>Safety</ID>
+      <Name>Safety</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="303617ce-ec3f-4859-8a60-674faa02b000">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e83675cb-06e8-4aa7-9328-4277f1f442d5">
+            <TableID>dbo_Violations</TableID>
+            <ColumnID>Safety</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e114ef47-36ee-4b32-8209-9eb8619bf9a7">
+      <ID>Material Quality</ID>
+      <Name>Material Quality</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="dd06aab3-7d6f-4754-aac8-bb55a9247fe7">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="45f7cef0-6af4-4a30-8c03-1547291f33ef">
+            <TableID>dbo_Violations</TableID>
+            <ColumnID>MaterialQuality</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="53073770-c811-44b3-bd5e-05ba7ed1765b">
+      <ID>Place</ID>
+      <Name>Place</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6de9ec79-8249-4dfe-96ae-6579736147a9">
+          <DataType>WChar</DataType>
+          <DataSize>150</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bc476bdd-6dd7-40f8-b76e-2c41dd22aee3">
+            <TableID>dbo_Violations</TableID>
+            <ColumnID>Place</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="75e99aa8-9f2d-4c14-8ed7-484a422b96a1">
+      <ID>City</ID>
+      <Name>City</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b5a1cde7-1f43-4eaf-b361-37bbd2a06224">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5b9f2753-0737-4ce4-b604-5271a1f1517e">
+            <TableID>dbo_Violations</TableID>
+            <ColumnID>City</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b6e838d4-3954-4122-92ce-4cd964516ec9">
+      <ID>Details</ID>
+      <Name>Details</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1c81bb94-94ce-4d31-b4b2-f48cbe296a99">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8f99fa6b-fc5f-49b7-97f8-4335e52bf562">
+            <TableID>dbo_ViolationDescription</TableID>
+            <ColumnID>Details</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="626f00c4-ed07-455d-b897-499334076e78">
+      <ID>Date</ID>
+      <Name>Date</Name>
+      <Type>Date</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0b83c73a-9e5c-45fb-b336-ef45e8c9533f">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="529fbfb9-fed4-40c5-9969-8c2e99eeec4b">
+            <TableID>dbo_ViolationDescription</TableID>
+            <ColumnID>Date</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="161aefa6-909b-481f-82be-d75bc396b106">
+      <ID>Day</ID>
+      <Name>Day</Name>
+      <Type>DayOfMonth</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0e09f0b5-fa59-416c-9bbb-fd7e7fe2d52e">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="45a9c7c3-254d-49a8-bd75-1357bc9e19e6">
+            <TableID>dbo_ViolationDate</TableID>
+            <ColumnID>Day</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ccb465bb-69dd-4405-b2b8-6f87d38144eb">
+      <ID>Month</ID>
+      <Name>Month</Name>
+      <Type>MonthOfYear</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5931aade-0a21-46ec-b9a1-63258473101b">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="20ca52c9-fd06-41de-ac96-0686d61899d5">
+            <TableID>dbo_ViolationDate</TableID>
+            <ColumnID>Month</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="cc9d1c98-662e-44b5-aa63-5650a09c6a1a">
+      <ID>Type</ID>
+      <Name>Type</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="83f4ea39-0647-4aa7-8098-d510033f8f62">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="81f11854-b54d-423c-9a58-cc69b69cd755">
+            <TableID>dbo_ViolationsStatus</TableID>
+            <ColumnID>Type</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="ffd67abe-c413-4ec0-b06d-f3cdd429f244">
+      <ID>Hierarchy</ID>
+      <Name>BuildingViolationHierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="032674f5-dbcc-4b75-9f7c-268a76f3e73a">
+          <ID>Vio Id</ID>
+          <Name>Vio Id</Name>
+          <SourceAttributeID>Vio Id</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="5aac9db7-884c-44e9-a3d8-4fd5eaddcb43">
+          <ID>Date</ID>
+          <Name>Date</Name>
+          <SourceAttributeID>Date</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="5dc1e036-0c8b-4a16-b285-3ba2d339191d">
+          <ID>Day</ID>
+          <Name>Day</Name>
+          <SourceAttributeID>Day</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="159bf847-e356-42cc-b638-dfbb96dca7cd">
+          <ID>Month</ID>
+          <Name>Month</Name>
+          <SourceAttributeID>Month</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="778f9bce-cc2e-4ca5-a221-bad1920b4aeb">
+          <ID>Details</ID>
+          <Name>Details</Name>
+          <SourceAttributeID>Details</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="0e0cd0fd-9205-4886-b44b-4140fbf1d10c">
+          <ID>Place</ID>
+          <Name>Place</Name>
+          <SourceAttributeID>Place</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="0406ad94-b6b4-468a-a3e7-4b637e986818">
+          <ID>City</ID>
+          <Name>City</Name>
+          <SourceAttributeID>City</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="400865dd-6487-4ba4-a844-f14b5675cb20">
+          <ID>Type</ID>
+          <Name>Type</Name>
+          <SourceAttributeID>Type</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="c935da0d-05ed-4916-ae3c-be75f137f499">
+          <ID>Construction Art</ID>
+          <Name>Construction Art</Name>
+          <SourceAttributeID>Construction Art</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="865cdd6f-bc5e-4926-946e-e6f16f43087c">
+          <ID>Material Quality</ID>
+          <Name>Material Quality</Name>
+          <SourceAttributeID>Material Quality</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="796b6842-d844-462a-99c0-f33096b1dcef">
+          <ID>Responsibility</ID>
+          <Name>Responsibility</Name>
+          <SourceAttributeID>Responsibility</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="6618bfa0-6a6f-4115-940c-6879d229c3b7">
+          <ID>Safety</ID>
+          <Name>Safety</Name>
+          <SourceAttributeID>Safety</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

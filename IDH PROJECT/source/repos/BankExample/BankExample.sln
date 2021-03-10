@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29123.88
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "BankExample", "BankExample\BankExample.dwproj", "{FA10EA4C-C579-4E86-9AD6-6968BD208136}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA10EA4C-C579-4E86-9AD6-6968BD208136}.Development|Default.ActiveCfg = Development
+		{FA10EA4C-C579-4E86-9AD6-6968BD208136}.Development|Default.Build.0 = Development
+		{FA10EA4C-C579-4E86-9AD6-6968BD208136}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A0BA0C32-8FD4-4486-A3A2-C9D6962EC181}
+	EndGlobalSection
+EndGlobal

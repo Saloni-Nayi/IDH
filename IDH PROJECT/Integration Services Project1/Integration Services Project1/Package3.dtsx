@@ -1,0 +1,481 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/30/2020 1:26:41 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="LAB214-03"
+  DTS:CreatorName="PJWSTK\s20103"
+  DTS:DTSID="{CA07DDD3-41AB-4F44-A98C-97159C54482C}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.1301.433"
+  DTS:LocaleID="1045"
+  DTS:ObjectName="Package3"
+  DTS:PackageType="5"
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{07C1F124-47B1-4542-8B5E-E37C89BA0C49}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[db-mssql.s20103]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{FB2653F5-6A41-4F14-9B72-49AB7993E066}"
+      DTS:ObjectName="db-mssql.s20103">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=db-mssql;Initial Catalog=s20103;Integrated Security=True;Application Name=SSIS-Package3-{FB2653F5-6A41-4F14-9B72-49AB7993E066}db-mssql.s20103;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{6070F25C-FD9A-4E9F-A80F-7B557C0A0F9D}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task\ValidationTable"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
+              name="ValidationTable"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement used by the component to extract data."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether to allow non-string external columns to be implicitly converted to strings at the output columns."
+                  name="AllowImplicitStringConversion">true</property>
+                <property
+                  dataType="System.String"
+                  description="The Source database table name."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."Violations"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the mode to retrieve external column information"
+                  name="AccessMode"
+                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">0</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.DataReaderSourceAdapter</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\ValidationTable.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[db-mssql.s20103]"
+                  connectionManagerRefId="Package.ConnectionManagers[db-mssql.s20103]"
+                  description="Managed connection manager"
+                  name="IDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output]"
+                  name="ADO NET Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].Columns[VioId]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].ExternalColumns[VioId]"
+                      lineageId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].Columns[VioId]"
+                      name="VioId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].Columns[ViolationLastModifyDateId]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].ExternalColumns[ViolationLastModifyDateId]"
+                      lineageId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].Columns[ViolationLastModifyDateId]"
+                      name="ViolationLastModifyDateId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].Columns[ViolationdateId]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].ExternalColumns[ViolationdateId]"
+                      lineageId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].Columns[ViolationdateId]"
+                      name="ViolationdateId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].Columns[ViolationCodeId]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].ExternalColumns[ViolationCodeId]"
+                      lineageId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].Columns[ViolationCodeId]"
+                      name="ViolationCodeId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].Columns[ViolationsStatusId]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].ExternalColumns[ViolationsStatusId]"
+                      lineageId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].Columns[ViolationsStatusId]"
+                      name="ViolationsStatusId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].Columns[ViolationDescriptionId]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].ExternalColumns[ViolationDescriptionId]"
+                      lineageId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].Columns[ViolationDescriptionId]"
+                      name="ViolationDescriptionId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].Columns[ViolationStatusDateId]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].ExternalColumns[ViolationStatusDateId]"
+                      lineageId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].Columns[ViolationStatusDateId]"
+                      name="ViolationStatusDateId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].Columns[CompanyId]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].ExternalColumns[CompanyId]"
+                      lineageId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].Columns[CompanyId]"
+                      name="CompanyId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].Columns[ConstructionArt]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].ExternalColumns[ConstructionArt]"
+                      length="100"
+                      lineageId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].Columns[ConstructionArt]"
+                      name="ConstructionArt"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].Columns[Responsibility]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].ExternalColumns[Responsibility]"
+                      length="100"
+                      lineageId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].Columns[Responsibility]"
+                      name="Responsibility"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].Columns[Safety]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].ExternalColumns[Safety]"
+                      length="100"
+                      lineageId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].Columns[Safety]"
+                      name="Safety"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].Columns[MaterialQuality]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].ExternalColumns[MaterialQuality]"
+                      length="100"
+                      lineageId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].Columns[MaterialQuality]"
+                      name="MaterialQuality"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].Columns[TypeOfConnections]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].ExternalColumns[TypeOfConnections]"
+                      length="150"
+                      lineageId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].Columns[TypeOfConnections]"
+                      name="TypeOfConnections"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].Columns[Place]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].ExternalColumns[Place]"
+                      length="150"
+                      lineageId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].Columns[Place]"
+                      name="Place"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].Columns[City]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].ExternalColumns[City]"
+                      length="100"
+                      lineageId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].Columns[City]"
+                      name="City"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].Columns[Country]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].ExternalColumns[Country]"
+                      length="150"
+                      lineageId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].Columns[Country]"
+                      name="Country"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].ExternalColumns[VioId]"
+                      dataType="i4"
+                      name="VioId" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].ExternalColumns[ViolationLastModifyDateId]"
+                      dataType="i4"
+                      name="ViolationLastModifyDateId" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].ExternalColumns[ViolationdateId]"
+                      dataType="i4"
+                      name="ViolationdateId" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].ExternalColumns[ViolationCodeId]"
+                      dataType="i4"
+                      name="ViolationCodeId" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].ExternalColumns[ViolationsStatusId]"
+                      dataType="i4"
+                      name="ViolationsStatusId" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].ExternalColumns[ViolationDescriptionId]"
+                      dataType="i4"
+                      name="ViolationDescriptionId" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].ExternalColumns[ViolationStatusDateId]"
+                      dataType="i4"
+                      name="ViolationStatusDateId" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].ExternalColumns[CompanyId]"
+                      dataType="i4"
+                      name="CompanyId" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].ExternalColumns[ConstructionArt]"
+                      dataType="wstr"
+                      length="100"
+                      name="ConstructionArt" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].ExternalColumns[Responsibility]"
+                      dataType="wstr"
+                      length="100"
+                      name="Responsibility" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].ExternalColumns[Safety]"
+                      dataType="wstr"
+                      length="100"
+                      name="Safety" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].ExternalColumns[MaterialQuality]"
+                      dataType="wstr"
+                      length="100"
+                      name="MaterialQuality" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].ExternalColumns[TypeOfConnections]"
+                      dataType="wstr"
+                      length="150"
+                      name="TypeOfConnections" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].ExternalColumns[Place]"
+                      dataType="wstr"
+                      length="150"
+                      name="Place" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].ExternalColumns[City]"
+                      dataType="wstr"
+                      length="100"
+                      name="City" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Output].ExternalColumns[Country]"
+                      dataType="wstr"
+                      length="150"
+                      name="Country" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Error Output]"
+                  isErrorOut="true"
+                  name="ADO NET Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Error Output].Columns[VioId]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Error Output].Columns[VioId]"
+                      name="VioId" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Error Output].Columns[ViolationLastModifyDateId]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Error Output].Columns[ViolationLastModifyDateId]"
+                      name="ViolationLastModifyDateId" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Error Output].Columns[ViolationdateId]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Error Output].Columns[ViolationdateId]"
+                      name="ViolationdateId" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Error Output].Columns[ViolationCodeId]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Error Output].Columns[ViolationCodeId]"
+                      name="ViolationCodeId" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Error Output].Columns[ViolationsStatusId]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Error Output].Columns[ViolationsStatusId]"
+                      name="ViolationsStatusId" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Error Output].Columns[ViolationDescriptionId]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Error Output].Columns[ViolationDescriptionId]"
+                      name="ViolationDescriptionId" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Error Output].Columns[ViolationStatusDateId]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Error Output].Columns[ViolationStatusDateId]"
+                      name="ViolationStatusDateId" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Error Output].Columns[CompanyId]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Error Output].Columns[CompanyId]"
+                      name="CompanyId" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Error Output].Columns[ConstructionArt]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Error Output].Columns[ConstructionArt]"
+                      name="ConstructionArt" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Error Output].Columns[Responsibility]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Error Output].Columns[Responsibility]"
+                      name="Responsibility" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Error Output].Columns[Safety]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Error Output].Columns[Safety]"
+                      name="Safety" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Error Output].Columns[MaterialQuality]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Error Output].Columns[MaterialQuality]"
+                      name="MaterialQuality" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Error Output].Columns[TypeOfConnections]"
+                      dataType="wstr"
+                      length="150"
+                      lineageId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Error Output].Columns[TypeOfConnections]"
+                      name="TypeOfConnections" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Error Output].Columns[Place]"
+                      dataType="wstr"
+                      length="150"
+                      lineageId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Error Output].Columns[Place]"
+                      name="Place" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Error Output].Columns[City]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Error Output].Columns[City]"
+                      name="City" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Error Output].Columns[Country]"
+                      dataType="wstr"
+                      length="150"
+                      lineageId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Error Output].Columns[Country]"
+                      name="Country" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\ValidationTable.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\Data Flow Task"
+          TopLeft="61.1428581841138,25.082353292947" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Data Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\Data Flow Task\ValidationTable"
+          TopLeft="88.0000014986311,58.7294125883637" />
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\ValidationTable">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

@@ -1,0 +1,236 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="d5303201-f584-46dd-b877-f24f29aaac14" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>s20103</ID>
+  <Name>s20103</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>s20103</DataSourceID>
+  <Schema>
+    <xs:schema id="s20103" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="s20103" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="21e6eb75-c222-41a9-888a-4a9ab243dcbd">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_ViolationCode" msprop:design-time-name="8be11dec-4d3a-4529-9479-5aec0ba43ddc" msprop:DbTableName="ViolationCode" msprop:FriendlyName="ViolationCode" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ViolationCodeId" msprop:design-time-name="038cdcb9-d453-4bf1-b93a-942a41c86a0c" msprop:DbColumnName="ViolationCodeId" msprop:FriendlyName="ViolationCodeId" type="xs:int" />
+                  <xs:element name="CodeDetails" msprop:design-time-name="e6db7232-53d0-43b0-a976-0b221693a136" msprop:DbColumnName="CodeDetails" msprop:FriendlyName="CodeDetails">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Violations" msprop:design-time-name="a67f61a1-4980-48c8-95fa-84181b9a8325" msprop:DbTableName="Violations" msprop:FriendlyName="Violations" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="VioId" msprop:design-time-name="a4a2a30a-f27c-4186-aae8-a5e4eca83d83" msprop:DbColumnName="VioId" msprop:FriendlyName="VioId" type="xs:int" />
+                  <xs:element name="ViolationLastModifyDateId" msprop:design-time-name="449e494a-c99c-43aa-aa96-dc12507906af" msprop:DbColumnName="ViolationLastModifyDateId" msprop:FriendlyName="ViolationLastModifyDateId" type="xs:int" />
+                  <xs:element name="ViolationdateId" msprop:design-time-name="ef2e57ef-565d-4f61-b9ea-0269b0401752" msprop:DbColumnName="ViolationdateId" msprop:FriendlyName="ViolationdateId" type="xs:int" />
+                  <xs:element name="ViolationCodeId" msprop:design-time-name="0d3acab1-0647-4cef-9dcc-6edf7d6b5fd9" msprop:DbColumnName="ViolationCodeId" msprop:FriendlyName="ViolationCodeId" type="xs:int" />
+                  <xs:element name="ViolationsStatusId" msprop:design-time-name="f20dc669-32dc-470e-9cf7-a7006a9c43be" msprop:DbColumnName="ViolationsStatusId" msprop:FriendlyName="ViolationsStatusId" type="xs:int" />
+                  <xs:element name="ViolationDescriptionId" msprop:design-time-name="a47ced4b-ac69-4412-9d11-15327bf28abd" msprop:DbColumnName="ViolationDescriptionId" msprop:FriendlyName="ViolationDescriptionId" type="xs:int" />
+                  <xs:element name="ViolationStatusDateId" msprop:design-time-name="4ca5705e-0db7-436a-9307-da3915063d0a" msprop:DbColumnName="ViolationStatusDateId" msprop:FriendlyName="ViolationStatusDateId" type="xs:int" />
+                  <xs:element name="CompanyId" msprop:design-time-name="979439eb-11e3-47b4-b116-fb8767ec450c" msprop:DbColumnName="CompanyId" msprop:FriendlyName="CompanyId" type="xs:int" />
+                  <xs:element name="ConstructionArt" msprop:design-time-name="3d60dd87-55a8-4b41-b5a0-392fe46d41bb" msprop:DbColumnName="ConstructionArt" msprop:FriendlyName="ConstructionArt">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Responsibility" msprop:design-time-name="48a69784-8684-45b8-8c45-6450fcabd3cc" msprop:DbColumnName="Responsibility" msprop:FriendlyName="Responsibility">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Safety" msprop:design-time-name="2d3d1c93-7586-4cec-8aa2-aacfe6de2b8f" msprop:DbColumnName="Safety" msprop:FriendlyName="Safety">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MaterialQuality" msprop:design-time-name="f7cda619-4deb-4d7c-901e-5b05eb82cbec" msprop:DbColumnName="MaterialQuality" msprop:FriendlyName="MaterialQuality">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="TypeOfConnections" msprop:design-time-name="9832606d-aa71-44d8-806a-146b152dbe21" msprop:DbColumnName="TypeOfConnections" msprop:FriendlyName="TypeOfConnections">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="150" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Place" msprop:design-time-name="4d73d11c-2d90-4c80-96e7-14f5966c3a08" msprop:DbColumnName="Place" msprop:FriendlyName="Place">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="150" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="City" msprop:design-time-name="e3ba3c69-b3cc-45cb-b122-9dbd93730aad" msprop:DbColumnName="City" msprop:FriendlyName="City">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Country" msprop:design-time-name="9bfc7e6b-c9d3-46e5-a3f0-f1c5d0a54a3a" msprop:DbColumnName="Country" msprop:FriendlyName="Country">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="150" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_ViolationDescription" msprop:design-time-name="ff2f9fb0-f5b2-45d2-b659-dbe74321f06d" msprop:DbTableName="ViolationDescription" msprop:FriendlyName="ViolationDescription" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ViolationDescriptionId" msprop:design-time-name="a1b54347-8f25-47dc-a25d-565d419c9ad8" msprop:DbColumnName="ViolationDescriptionId" msprop:FriendlyName="ViolationDescriptionId" type="xs:int" />
+                  <xs:element name="Name" msprop:design-time-name="d439014c-fad2-44f6-99b4-61e4b83714ec" msprop:DbColumnName="Name" msprop:FriendlyName="Name">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Details" msprop:design-time-name="144f7099-6882-4c79-86cc-c0a60cc5f22f" msprop:DbColumnName="Details" msprop:FriendlyName="Details">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Date" msprop:design-time-name="0c644594-1b09-4e8f-b9db-554d8f181cb2" msprop:DbColumnName="Date" msprop:FriendlyName="Date" type="xs:dateTime" />
+                  <xs:element name="Time" msdata:DataType="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:design-time-name="4d36ab40-c9ce-42f3-989a-bc924dd9a060" msprop:DbColumnName="Time" msprop:FriendlyName="Time" type="xs:anyType" />
+                  <xs:element name="Place" msprop:design-time-name="85e1025c-8ff0-4278-9130-89666c9d0b10" msprop:DbColumnName="Place" msprop:FriendlyName="Place">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_ViolationDate" msprop:design-time-name="66a1a3fe-8160-463b-9b7a-598a6dbc7a77" msprop:DbTableName="ViolationDate" msprop:FriendlyName="ViolationDate" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ViolationdateId" msprop:design-time-name="13a80d7b-d8a5-4f7d-ae73-9ae28eeb84b7" msprop:DbColumnName="ViolationdateId" msprop:FriendlyName="ViolationdateId" type="xs:int" />
+                  <xs:element name="Date" msprop:design-time-name="ab799394-a6b5-4e0c-85b6-a158012def44" msprop:DbColumnName="Date" msprop:FriendlyName="Date" type="xs:dateTime" />
+                  <xs:element name="Day" msprop:design-time-name="6445b4c8-c20f-4ece-a3d2-6f1d201a8bb8" msprop:DbColumnName="Day" msprop:FriendlyName="Day" type="xs:int" />
+                  <xs:element name="Month" msprop:design-time-name="39b494e4-8013-41a9-ac98-6007c61b2651" msprop:DbColumnName="Month" msprop:FriendlyName="Month" type="xs:int" />
+                  <xs:element name="Time" msdata:DataType="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:design-time-name="f5a20ffb-0a32-4379-8e57-1a484beed3d8" msprop:DbColumnName="Time" msprop:FriendlyName="Time" type="xs:anyType" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_ViolationsStatus" msprop:design-time-name="e83102ff-c3ee-43e5-9f17-6d75066a4852" msprop:DbTableName="ViolationsStatus" msprop:FriendlyName="ViolationsStatus" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ViolationsStatusId" msprop:design-time-name="a3c92bed-bb7a-45c4-a079-c70e0834fc95" msprop:DbColumnName="ViolationsStatusId" msprop:FriendlyName="ViolationsStatusId" type="xs:int" />
+                  <xs:element name="StatusUpdate" msprop:design-time-name="9ac87d14-9d22-430b-8dae-b267c27448d8" msprop:DbColumnName="StatusUpdate" msprop:FriendlyName="StatusUpdate">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Type" msprop:design-time-name="8f4abed9-30ba-427f-87da-6e953af84b91" msprop:DbColumnName="Type" msprop:FriendlyName="Type">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_ViolationCode" />
+          <xs:field xpath="ViolationCodeId" />
+        </xs:unique>
+        <xs:unique name="dbo_Violations_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Violations" />
+          <xs:field xpath="VioId" />
+        </xs:unique>
+        <xs:unique name="dbo_ViolationDescription_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_ViolationDescription" />
+          <xs:field xpath="ViolationDescriptionId" />
+        </xs:unique>
+        <xs:unique name="dbo_ViolationDate_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_ViolationDate" />
+          <xs:field xpath="ViolationdateId" />
+        </xs:unique>
+        <xs:unique name="dbo_ViolationsStatus_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_ViolationsStatus" />
+          <xs:field xpath="ViolationsStatusId" />
+        </xs:unique>
+        <xs:keyref name="Violations_ViolationsStatus" refer="dbo_ViolationsStatus_Constraint1">
+          <xs:selector xpath=".//dbo_Violations" />
+          <xs:field xpath="ViolationsStatusId" />
+        </xs:keyref>
+        <xs:keyref name="Violations_ViolationDate" refer="dbo_ViolationDate_Constraint1">
+          <xs:selector xpath=".//dbo_Violations" />
+          <xs:field xpath="ViolationdateId" />
+        </xs:keyref>
+        <xs:keyref name="Violations_ViolationCode" refer="Constraint1">
+          <xs:selector xpath=".//dbo_Violations" />
+          <xs:field xpath="ViolationCodeId" />
+        </xs:keyref>
+        <xs:keyref name="Violations_ViolationDescription" refer="dbo_ViolationDescription_Constraint1">
+          <xs:selector xpath=".//dbo_Violations" />
+          <xs:field xpath="ViolationDescriptionId" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <s20103 xmlns="" />
+  </Schema>
+</DataSourceView>

@@ -1,0 +1,96 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>s20103</Database>
+    <Server>db-mssql</Server>
+    <ConnectionString>Data Source=db-mssql;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>QefXil/gPGPGH/tUBT2AanY7QHc=2020-06-05 13:59:082020-06-05 13:58:59</TimeStamp>
+        <ID>
+          <String>s20103</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>afPS9U1X3+U1HU5S1btaFegocvA=2020-06-05 13:59:452020-06-05 13:59:45</TimeStamp>
+        <ID>
+          <String>s20103</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>mE/TF37lFXba3zEcP3xtzjdie+w=2020-06-05 14:00:392020-06-05 14:00:39</TimeStamp>
+        <ID>
+          <String>Violation Description</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>JImqbHmzVzPnc5mkjYR7t8NZxbU=2020-06-05 14:00:392020-06-05 14:00:39</TimeStamp>
+        <ID>
+          <String>Violation Code</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>R9CoZUrlqGF9lDxhz9TC+YuZRSw=2020-06-05 14:00:392020-06-05 14:00:39</TimeStamp>
+        <ID>
+          <String>Violation Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Id8F6dSSV4Ny0Y/H6hnLjbvcyMA=2020-06-05 14:00:392020-06-05 14:00:39</TimeStamp>
+        <ID>
+          <String>Violations Status</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>4Zvgupj6mYReLcsqvO/jcYc2SV0=2020-06-05 14:00:392020-06-05 14:00:39</TimeStamp>
+        <ID>
+          <String>Violations</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>hgW6TTOEGQMj2c1jy0oWt+2gyQ0=2020-06-05 14:00:392020-06-05 14:00:39pBEyOUOKI5N1KPfP8+zvRMghl5s=2020-06-05 14:00:392020-06-05 14:00:39</TimeStamp>
+        <ID>
+          <String>s20103</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Role</Type>
+        <TimeStamp>Nk29+kxc7xlmuplIt5ENkElMJMg=2020-06-05 14:00:182020-06-05 13:59:49</TimeStamp>
+        <ID>
+          <String>Role</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>eFhISnXdUrHaEkKjcTa+gwil8FU=2020-06-05 14:00:162020-06-05 13:58:15</TimeStamp>
+      <ID>
+        <String>s20103</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2020-06-05T12:02:57.58Z</LastDeployed>
+</DeploymentSnapshot>

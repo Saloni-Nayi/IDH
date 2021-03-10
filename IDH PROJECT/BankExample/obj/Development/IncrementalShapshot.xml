@@ -1,0 +1,89 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>s20103</Database>
+    <Server>db-mssql</Server>
+    <ConnectionString>Data Source=db-mssql;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>GzGjXZktNajdNr3wIXWb5u/2o9w=2020-05-21 14:50:062020-05-21 14:48:48</TimeStamp>
+        <ID>
+          <String>Nasz Bank Gwiazda</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>Mjz3WQH1jTVh44H3gUILfYT8J0Y=2020-05-16 17:50:282020-05-21 14:48:49</TimeStamp>
+        <ID>
+          <String>Nasz Bank Gwiazda</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>oNOVr7kIUmYndpkj3zwQUxV+05I=2020-05-16 17:57:312020-05-21 14:48:48</TimeStamp>
+        <ID>
+          <String>Czas</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>hFOI7Ru9J3eWUcPTO4NVNzeFbJc=2020-05-16 18:01:112020-05-21 14:48:49</TimeStamp>
+        <ID>
+          <String>Oddzial Banku</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>GyhsOvWEb1B38VphFx+txysO/EU=2020-05-16 18:10:372020-05-21 14:48:49</TimeStamp>
+        <ID>
+          <String>Rachunek</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>OKBs0SJknng6ViV9Ff6hLKKRmec=2020-05-16 18:13:402020-05-21 14:48:50</TimeStamp>
+        <ID>
+          <String>Rodzaj Operacji</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>darB2a7LBsjE9QvJwEIniMsDXwk=2020-05-16 18:14:502020-05-21 14:48:48lRhbHG73h77195X9TsGZ+iJXHcU=2020-05-16 18:14:502020-05-21 14:48:49</TimeStamp>
+        <ID>
+          <String>Nasz Bank Gwiazda</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Role</Type>
+        <TimeStamp>FqiSzyK2FunDxJNs4NUDAr8T9HE=2020-05-16 18:18:582020-05-21 14:48:50</TimeStamp>
+        <ID>
+          <String>Role</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>sa5udz1sxIv0CDWdhfbIqI1ty+k=2020-05-16 18:18:582020-05-21 14:48:44</TimeStamp>
+      <ID>
+        <String>s20103</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2020-05-21T12:51:00.396667Z</LastDeployed>
+</DeploymentSnapshot>
